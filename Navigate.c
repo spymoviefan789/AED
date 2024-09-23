@@ -36,7 +36,9 @@ fclose(file);
 }
 
 
+/*************************************************************
 
+ ************************************************************/
 
 /*************************************************************
  * K=2            2         1
@@ -112,9 +114,26 @@ int tarefa2(int **mapa , int L , int C , int l_inicial ,int c_inicial , int k ){
 void tarefa3(int** mapa, FILE *output , int L, int C, int l_inicial, int c_inicial, int l_final, int c_final){
     int *dy = l_inicial - l_final;
     int *dx = c_inicial - c_final;
-
-    
-
+    if(dy>0)
+    {
+        for(int j=l_inicial;j<l_final;j++)
+        return 0;
+    }
+    else
+    {
+        for(int j=l_inicial;j<l_final;j--)
+        return 0;
+    }
+    if(dx>0)
+    {
+        for(int i=c_inicial;i<c_final;i--)
+        return 0;
+    }
+    else
+    {
+        for(int i=c_inicial;i<c_final;i++)
+        return 0;
+    }
 
 
 }   
